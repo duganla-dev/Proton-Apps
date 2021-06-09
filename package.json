@@ -1,0 +1,7 @@
+{
+    "name": "proton-apps",
+    "main": "index.html",
+    "window": {
+      "icon": "protonmail_logo.png"
+    }
+  }
