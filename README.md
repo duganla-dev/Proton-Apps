@@ -1,2 +1,2 @@
 # Proton-Apps
-NW.JS dedicated browser for protonmail.com, and the apps.
+A dedicated browser for protonmail.com, and the apps.
