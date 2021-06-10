@@ -1,7 +1,29 @@
 {
-    "name": "proton-apps",
-    "main": "index.html",
-    "window": {
-      "icon": "protonmail_logo.png"
+  "name": "proton-apps",
+  "version": "1.2.0",
+  "description": "A dedicated browser for protonmail.com and the apps.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "proton-apps",
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "npm run dist",
+      "icon": "./app.ico"
     }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^13.1.2",
+    "electron-builder": "^22.10.5"
   }
+}
